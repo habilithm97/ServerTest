@@ -16,7 +16,7 @@
             android:layout_height="wrap_content" />
 
         <Button
-            android:id="@+id/send"
+            android:id="@+id/sendBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="전송" />
@@ -42,7 +42,7 @@
         android:orientation="vertical" >
 
         <Button
-            android:id="@+id/serverStart"
+            android:id="@+id/serverStartBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="서버 시작" />
