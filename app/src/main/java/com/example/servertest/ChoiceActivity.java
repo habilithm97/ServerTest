@@ -39,5 +39,14 @@ public class ChoiceActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button volleyBtn = (Button)findViewById(R.id.volleyBtn);
+        volleyBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), VolleyActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
