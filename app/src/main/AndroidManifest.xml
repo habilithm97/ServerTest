@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ServerTest">
-        <activity android:name=".VolleyActivity"></activity>
+        <activity android:name=".VolleyActivity" />
         <activity android:name=".HttpActivity" />
         <activity android:name=".SocketActivity" />
         <activity
