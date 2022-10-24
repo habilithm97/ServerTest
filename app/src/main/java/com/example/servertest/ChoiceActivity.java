@@ -48,5 +48,14 @@ public class ChoiceActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button gsonBtn = (Button)findViewById(R.id.gsonBtn);
+        gsonBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), GsonActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

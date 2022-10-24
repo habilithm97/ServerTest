@@ -40,8 +40,6 @@ import java.util.Map;
 
 public class VolleyActivity extends AppCompatActivity {
 
-    RequestQueue requestQueue;
-
     EditText edt, edt1;
     TextView tv;
 
@@ -69,11 +67,6 @@ public class VolleyActivity extends AppCompatActivity {
                 makeRequest();
             }
         });
-
-        // 요청 큐 생성 -> 한번만 만들어서 계속 사용함
-        if(requestQueue == null) {
-            requestQueue = Volley.newRequestQueue(getApplicationContext());
-        }
     }
 
     public void makeRequest1() {
@@ -108,7 +101,7 @@ public class VolleyActivity extends AppCompatActivity {
             }
         };
         request.setShouldCache(false); // 이전 결과가 있어도 새로 요청하여 응답을 보여줌
-        requestQueue.add(request); // 요청 큐에 넣음
+        MyApplication.requestQueue.add(request); // 요청 큐에 넣음
         println("요청을 보냄. ");
     }
 
@@ -135,7 +128,7 @@ public class VolleyActivity extends AppCompatActivity {
             }
         };
         request.setShouldCache(false); // 이전 결과가 있어도 새로 요청하여 응답을 보여줌
-        requestQueue.add(request); // 요청 큐에 넣음
+        MyApplication.requestQueue.add(request); // 요청 큐에 넣음
         println("요청을 보냄. ");
     }
 

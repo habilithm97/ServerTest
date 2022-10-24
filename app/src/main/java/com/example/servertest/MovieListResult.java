@@ -1,7 +1,5 @@
 package com.example.servertest;
 
-import android.graphics.Movie;
-
 import java.util.ArrayList;
 
 public class MovieListResult {
