@@ -46,7 +46,7 @@ public class GsonActivity extends AppCompatActivity {
     }
 
     public void makeRequest() {
-        String url = "https://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=키=20200302";
+        String url = "https://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=0850a722a3fec449b4bce97d7bca5433&targetDt=20200302";
 
         // 문자열을 주고 받기 위해 사용하는 요청 객체
         StringRequest request = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {

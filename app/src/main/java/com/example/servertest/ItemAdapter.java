@@ -3,10 +3,13 @@ package com.example.servertest;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -40,12 +43,14 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
     static class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView tv, tv1;
+        ImageView iv;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             tv = itemView.findViewById(R.id.tv);
             tv1 = itemView.findViewById(R.id.tv1);
+            iv = itemView.findViewById(R.id.iv);
         }
 
         public void setItem(Movie item) {

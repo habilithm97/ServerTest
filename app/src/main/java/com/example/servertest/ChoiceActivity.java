@@ -57,5 +57,14 @@ public class ChoiceActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button picasso = (Button)findViewById(R.id.picassoBtn);
+        picasso.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), PicassoActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
