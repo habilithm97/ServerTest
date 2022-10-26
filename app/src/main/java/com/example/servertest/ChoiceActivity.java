@@ -66,5 +66,14 @@ public class ChoiceActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button retrofitBtn = (Button)findViewById(R.id.retrofitBtn);
+        retrofitBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), RetrofitActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

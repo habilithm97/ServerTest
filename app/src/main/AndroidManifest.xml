@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ServerTest"
         android:usesCleartextTraffic="true">
-        <activity android:name=".PicassoActivity"></activity>
+        <activity android:name=".RetrofitActivity"></activity>
+        <activity android:name=".PicassoActivity" />
         <activity android:name=".GsonActivity" />
         <activity android:name=".VolleyActivity" />
         <activity android:name=".HttpActivity" />
